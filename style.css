@@ -22,3 +22,13 @@ main{
     flex-direction: column;
     gap: 20px;
 }
+
+img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 10px;
+    border: 2px solid rgb(72, 102, 187);
+    
+}
