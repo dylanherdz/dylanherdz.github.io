@@ -1,49 +1,94 @@
 <html lang="es">
 <head>
-<meta name="description" content="Estudiante de Ingenieria en Sistemas de Informacion">
-<title> Inicio | Dylan HR </title>
-<script> </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Estudiante de Ingeniería en Sistemas de Información">
+<title>Inicio | Dylan HR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip-link" href="#inicio">Saltar al contenido principal</a>
+
 <header>
-<nav>
-    <ul>
-        <li>
-            <a href="#">Sobre Mi</a>
-        </li>
-        <li>
-            <a href="#">Contacto</a>
-        </li>
-        <li>
-            <a href="#">Proyectos</a>
-        </li>
-    </ul>
-</nav></header>
-<link rel="stylesheet" href="style.css">
-<main>
-    <div class="info">
-        <h1> Hola, Soy Dylan Hernandez 🚀</h1>
-        <h2> Estudiante de Ingenieria en Sistemas de Informacion </h2>
-        <button> Ver Mis Proyectos </button>
-    </div>
-    <div class="Image">
-        <img src="Assets/Dylan.jpg" alt="Mi Imagen">
-    </div>
+  <div class="header-inner">
+    <a href="#inicio" class="logo">
+      <img src="Assets/LOGODH.png" alt="Logo de Dylan Hernández">
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+      <span class="sr-only">Abrir menú</span>
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+    </button>
+
+    <nav id="nav-menu" class="nav">
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="info">
+    <p class="eyebrow">Portafolio</p>
+    <h1>Hola, soy Dylan Hernández</h1>
+    <h2>Estudiante de Ingeniería en Sistemas de Información</h2>
+    <p class="lead">Me interesa construir software con buenas prácticas, desde sistemas de gestión hasta proyectos de desarrollo de videojuegos.</p>
+    <a href="#proyectos" class="button">Ver mis proyectos</a>
+  </div>
+  <div class="image">
+    <img src="Assets/Dylan.jpg" alt="Foto de Dylan Hernández">
+  </div>
 </main>
-<section></section>
-<section></section>
-<script> 
-console.log("Hola Mundo")
-</script>
-<footer>
-        <ul>
-        <li>
-            <a href="#">GitHUB</a>
-        </li>
-        <li>
-            <a href="https://www.linkedin.com/in/dylan-hernandez-317500226/">LinkedIn</a>
-        </li>
-    </ul>
+
+<section id="sobre-mi" aria-labelledby="sobre-mi-title">
+  <h2 id="sobre-mi-title">Sobre mí</h2>
+  <p>Soy estudiante de Ingeniería en Sistemas de Información, con interés en el desarrollo de software y videojuegos. Disfruto resolver problemas reales a través de sistemas bien pensados, desde el análisis y diseño hasta la implementación.</p>
+</section>
+
+<section id="proyectos" aria-labelledby="proyectos-title">
+  <h2 id="proyectos-title">Proyectos</h2>
+  <div class="projects-grid">
+
+    <article class="project-card">
+      <h3>Base de Datos de Tractores</h3>
+      <p>Sistema para gestionar el inventario y la información de una flota de tractores: registro de unidades, control de mantenimiento y consulta de disponibilidad.</p>
+      <div class="tags">
+        <span>Base de datos</span>
+        <span>Gestión</span>
+      </div>
+      <a href="#" class="card-link">Ver proyecto <span aria-hidden="true">→</span></a>
+    </article>
+
+    <article class="project-card">
+      <h3>Administrador de Tareas</h3>
+      <p>Aplicación para crear, organizar y dar seguimiento a tareas, permitiendo priorizarlas y marcar su progreso hasta completarlas.</p>
+      <div class="tags">
+        <span>Productividad</span>
+        <span>Tareas</span>
+      </div>
+      <a href="#" class="card-link">Ver proyecto <span aria-hidden="true">→</span></a>
+    </article>
+
+  </div>
+</section>
+
+<footer id="contacto">
+  <h2 class="sr-only">Contacto</h2>
+  <ul>
+    <li><a href="#">GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/dylan-hernandez-317500226/">LinkedIn</a></li>
+  </ul>
+  <p class="copyright">© 2026 Dylan Hernández</p>
 </footer>
+
+<script src="script.js"></script>
 </body>
- </html>
+</html>
